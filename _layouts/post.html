@@ -1,0 +1,12 @@
+---
+layout: default
+---
+    <div>
+        <h2>
+            {{ page.title }}
+        </h2>
+        {{ page.date | date: "%b %-d , %Y" }}
+    </div>
+    <div class="markdown">
+        {{ content }}
+    </div>

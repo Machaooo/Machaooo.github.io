@@ -1,1 +1,20 @@
-theme: jekyll-theme-hacker
+name: "Blog of Mackail"
+description: "Web Front-End Blog by mackail"
+
+url: "http://machaooo.github.io"
+
+
+timezone: Asia/Shanghai
+
+paginate: 16
+paginate_path: "/page:num"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+
+permalink: pretty
+
+gems:
+- jekyll-paginate
