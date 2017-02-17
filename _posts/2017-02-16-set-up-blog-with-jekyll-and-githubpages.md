@@ -59,7 +59,7 @@ excerpt: 从0开始使用jekyll+github pages搭建个人博客
  </code>
  </pre>
  
-_include文件夹下包含的是一些HTML片段，比如header里的代码只是网页的上部，而head.html里的代码只是完整html代码中body之前的部分代码，同理footer.html是网页底部信息的代码，它们都是可复用的组件，可以使用{% include filename.html %}的方式引入到其他HTML文件中的相应位置。
+_include文件夹下包含的是一些HTML片段，比如header里的代码只是网页的上部，而head.html里的代码只是完整html代码中body之前的部分代码，同理footer.html是网页底部信息的代码，它们都是可复用的组件，可以使用include的方式引入到其他HTML文件中的相应位置。
 
 _layout文件夹下包含的是模板，他们都是会被其他文件引用的，他们中都会包含 {{ content }}，此处content及为引用此模板的文件的内容。比如default.html文件内容：
 <pre>
