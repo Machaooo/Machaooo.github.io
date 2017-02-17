@@ -35,6 +35,7 @@ excerpt: 从0开始使用jekyll+github pages搭建个人博客
 
 于是笔者暂时切换去简单学习了一下jekyll引擎的模板语言[Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)，然后建立了完整的模板骨架结构。
 
+<!--
 <pre>
  首先，文件结构如下：
  <code>
@@ -121,7 +122,7 @@ layout: default
 &lt;/div&gt;
 </code>
 </pre>
-
+-->
 
 
 
