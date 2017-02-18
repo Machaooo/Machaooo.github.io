@@ -12,3 +12,5 @@ excerpt: Trace the changes of this blog
 ### 2017-02-16
 The first version of my [blog](https://machaooo.github.io) was set up ---[view](https://github.com/Machaooo/machaooo.github.io/commit/edf0387769f871b1959241ef72e3af252678c80c)
 
+### 2017-02-17
+Enable comment . --- [view]()
