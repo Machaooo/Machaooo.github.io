@@ -15,6 +15,4 @@ The first version of my [blog](https://machaooo.github.io) was set up ---[view](
 ### 2017-02-17
 <<<<<<< HEAD
 Enable comment . --- [view](https://github.com/Machaooo/machaooo.github.io/commit/db8d11b2c95a240e2b25ed6bcc1f7fc792b57d6e)
-=======
-Enable comment . --- [view]()
->>>>>>> origin/master
+
