@@ -71,14 +71,14 @@ _config.yml文件中包含着网页基本信息，比如网站url，rss订阅信
 
 index.html文件一般就是文章列表页，我的代码如下：
 
-![index.html文件代码]({{ site.url }}/images/index_code.png)
+![index.html文件代码]({{ site.url }}/images/index_code.PNG)
 
 jekyll引擎的工作方式类似于这样：拿到_post文件夹里的文章，根据其YAML信息，选择相应的layout并生成一个HTML文件，生成的文件位于_sites文件夹下相应的路径中。此时这一生成的HTML文件即为一般博客中点进一篇文章时该文章的页面。同时我们再将此HTML文件路径放到主页的链接里，当点击该文章标题时，链接就会把我们带到该文章页面。而首页的文章列表，就像上面的index.html文件里的代码一样，是用liqulid的for语句对_post文件夹里所有的文章遍历，生成各自对应的链接。
 
 此时个人博客的本地文件已初步建立，此时在命令行里输入
 <pre><code> $ jekyll serve --watch</code></pre>
 jekyll 的本地服务器启动，此时打开浏览器，访问localhost:4000,此时显示的就是所建立的博客渲染完成时的样子，如下：
-![渲染完成的博客页面]({{ site.url }}/images/firstpage.png)
+![渲染完成的博客页面]({{ site.url }}/images/firstpage.PNG)
 
 此后，只需要修改一下文件夹中的HTML文件和CSS文件就可以制作出一个个性化的个人博客了。
 
