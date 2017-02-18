@@ -35,53 +35,29 @@ excerpt: 从0开始使用jekyll+github pages搭建个人博客
 
 于是笔者暂时切换去简单学习了一下jekyll引擎的模板语言[Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)，然后建立了完整的模板骨架结构。
 
-<!--
+
 <pre>
  首先，文件结构如下：
  <code>
  _include
- 
     |	header.html
     |	head.html
     |	footer.html
-    
  _layout
- 
-	|	default.html
+    |   default.html
     |	post.html
-    
  _post
- 
   .gitignore
- 
   _config.yml
- 
   index.html
  </code>
  </pre>
  
 _include文件夹下包含的是一些HTML片段，比如header里的代码只是网页的上部，而head.html里的代码只是完整html代码中body之前的部分代码，同理footer.html是网页底部信息的代码，它们都是可复用的组件，可以使用include的方式引入到其他HTML文件中的相应位置。
 
-_layout文件夹下包含的是模板，他们都是会被其他文件引用的，他们中都会包含 {{ content }}，此处content及为引用此模板的文件的内容。比如default.html文件内容：
-<pre>
-<code>
-&lt;!DOCTYPE html &gt;
- &lt;html lang="en"&gt;
-   {% include head.html %}
- &lt;body&gt;
-      &lt;div class="header"&gt;
-         {% include header.html %}
-      &lt;/div&gt;
-      &lt;div class="content"&gt;
-         {{ content }}
-      &lt;/div&gt;
-      &lt;div class="footer"&gt;
-         {% include footer.html %}
-      &lt;/div&gt;
- &lt;/body&gt;
- &lt;/htm&gt;
-</code>
-</pre>
+_layout文件夹下包含的是模板，他们都是会被其他文件引用的，liquid语法中content即为引用此模板的文件的内容。比如default.html文件内容：
+
+![default.html文件代码]({{ site.url }}/images/default_code.png)
 
 _post文件夹下就是放到博客里的文章，注意命名方式必须是yyyy-mm-dd-the-name-of-your-article.md ，否则将无法解析，文章内容开头的YAML信息中
 <pre>
@@ -89,7 +65,7 @@ _post文件夹下就是放到博客里的文章，注意命名方式必须是yyy
 layout：post
 ---
 </pre>
-即表明文章引用_layout文件夹下post.html，文章内容将填充到post.html中的{{ content }}里。
+即表明文章引用_layout文件夹下post.html，文章内容将填充到post.html中的内容里。
 
 .gitignore文件
 在这个文件中记录的文件或文件夹在提交本地文件的时候不会被提交
@@ -97,35 +73,8 @@ layout：post
 _config.yml文件中包含着网页基本信息，比如网站url，rss订阅信息，对文章列表分页的设置等，具体可参考[这里](http://jekyll.com.cn/docs/configuration/).
 
 index.html文件一般就是文章列表页，我的代码如下：
-<pre>
-<code>
----
-layout: default
----
 
-&lt;div&gt;
-  &lt;ul&gt;
-     {% for post in site.posts %}
-     &lt;li&gt;
-        &lt;h2&gt;
-           &lt;a href="{{ post.url | prepend: site.url }}"&gt;
-           {{ post.title }}
-           &lt;/a&gt;
-        &lt;/h2&gt;
-        &lt;span&gt;
-           {{ post.date | date: "%b %-d, %Y" }}
-         &lt;/span&gt;
-         &lt;p&gt;{{ post.excerpt}}&lt;/p&gt;
-      &lt;/li&gt;
-      {% endfor %}
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code>
-</pre>
--->
-
-
-
+![index.html文件代码]({{ site.url }}/images/index_code.png)
 
 jekyll引擎的工作方式类似于这样：拿到_post文件夹里的文章，根据其YAML信息，选择相应的layout并生成一个HTML文件，生成的文件位于_sites文件夹下相应的路径中。此时这一生成的HTML文件即为一般博客中点进一篇文章时该文章的页面。同时我们再将此HTML文件路径放到主页的链接里，当点击该文章标题时，链接就会把我们带到该文章页面。而首页的文章列表，就像上面的index.html文件里的代码一样，是用liqulid的for语句对_post文件夹里所有的文章遍历，生成各自对应的链接。
 
