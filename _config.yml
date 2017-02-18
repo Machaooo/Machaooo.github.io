@@ -1,16 +1,22 @@
+# RSS订阅
 name: "Blog of Mackail"
 description: "Web Front-End Blog by mackail"
 url: "http://www.mackail.me"
+
+# 时区
 timezone: Asia/Shanghai
 
+#分页
 paginate: 16
 paginate_path: "/page:num"
 
+#Markdown
 markdown: kramdown
 kramdown:
   input: GFM
 highlighter: rouge
 
+#链接显示
 permalink: pretty
 
 gems:
