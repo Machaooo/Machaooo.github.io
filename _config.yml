@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RSS订阅
 name: "Blog of Mackail"
 description: "Web Front-End Blog by mackail"
@@ -27,3 +28,28 @@ comments :
   provider : duoshuo
   duoshuo :
     short_name : mackail
+=======
+name: "Blog of Mackail"
+description: "Web Front-End Blog by mackail"
+url: "http://www.mackail.me"
+timezone: Asia/Shanghai
+
+paginate: 16
+paginate_path: "/page:num"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+
+permalink: pretty
+
+gems:
+- jekyll-paginate
+
+# Comment setting
+comments :
+  provider : duoshuo
+  duoshuo :
+    short_name : mackail
+>>>>>>> origin/master
