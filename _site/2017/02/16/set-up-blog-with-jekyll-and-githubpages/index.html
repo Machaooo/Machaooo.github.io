@@ -18,6 +18,7 @@
     <li><a href="#" target="_blank">Resume</a>
     </li>
     <li><a href="mailto:machao@mackail.me" title="Email me">Email</a></li>
+    <li><a href="http://localhost:4000/feed.xml">RSS</a></li>
 </ul>
 
     </div>
@@ -59,7 +60,6 @@
 <p>笔者在建立个人博客时，曾参考<a href="http://pwnny.cn/original/2016/06/26/MakeBlog.html">Jekyll和Github搭建个人静态博客</a>这篇文章，以上步骤与该文章基本一致，但当笔者准备对建在d盘内的blog文件夹内的文件进行修改时，发现文件夹内的文件与笔者所参考文章中列出的并不一致，并且根据该文评论中显示，有很多人都遇到了这样的情况。笔者最终选择的解决方案是：自己敲代码。</p>
 
 <p>于是笔者暂时切换去简单学习了一下jekyll引擎的模板语言<a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers">Liquid</a>，然后建立了完整的模板骨架结构。</p>
-
 <pre>
  首先，文件结构如下：
  <code>
@@ -76,7 +76,6 @@
   index.html
  </code>
  </pre>
-
 <p>_include文件夹下包含的是一些HTML片段，比如header里的代码只是网页的上部，而head.html里的代码只是完整html代码中body之前的部分代码，同理footer.html是网页底部信息的代码，它们都是可复用的组件，可以使用include的方式引入到其他HTML文件中的相应位置。</p>
 
 <p>_layout文件夹下包含的是模板，他们都是会被其他文件引用的，liquid语法中content即为引用此模板的文件的内容。比如default.html文件内容：</p>
@@ -117,7 +116,6 @@ layout：post
 <p>以后更新文章只需要按照规定的格式命名后放入 _post 文件夹下，文章就会出现在博客首页了。</p>
 
 
-
         <!-- 多说评论框 start -->
         <div class="ds-thread" data-thread-key="http://localhost:4000/2017/02/16/set-up-blog-with-jekyll-and-githubpages" data-title="Jekyll+github pages 搭建博客的流程" data-url="http://localhost:4000/2017/02/16/set-up-blog-with-jekyll-and-githubpages/"></div>
         <!-- 多说评论框 end -->
@@ -135,12 +133,11 @@ layout：post
         </script>
         <!-- 多说公共JS代码 end -->
 
-
     </div>
 
     </div>
     <div class="footer">
-    <p> copyright &copy2017 惊蛰博客</p>
+    <p> copyright &copy 2017 惊蛰博客</p>
 <ul>
     <li><a href="https://github.com/Machaooo" target="_blank">GitHub</a> | </li>
     <li><a href="#">Resume</a> | </li>
@@ -148,7 +145,7 @@ layout：post
     <li><a href="#">WeiXin</a> | </li>
     <li><a href="http://weibo.com/p/1005053843949825/home?from=page_100505&mod=TAB&is_all=1#place" target="_blank">WeiBo</a> | </li>
     <li><a href="mailto:machao@mackail.me" title="Email me">Email</a> </li>
-    <li class="changelog"><a href="http://localhost:4000/2017/02/16/set-up-blog-with-jekyll-and-githubpages/" >changelog</a></li>
+    <li class="changelog"><a href="http://localhost:4000/0000-00-00-changelog/index.html" >changelog</a></li>
 </ul>
 
     </div>
