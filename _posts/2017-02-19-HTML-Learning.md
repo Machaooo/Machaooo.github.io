@@ -1,7 +1,7 @@
 ---
-layout：post
-title：HTML学习笔记
-date：2017-02-19 
+layout: post
+title: HTML学习笔记
+date: 2017-02-19 
 tags: 
 -HTML
 -Notes
