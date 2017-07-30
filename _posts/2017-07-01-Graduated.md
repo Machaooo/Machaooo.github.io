@@ -2,8 +2,6 @@
 layout: post
 title: 毕业啦
 date: 2017-07-01
-tags：
-- 随笔
 excerpt: 真正拿到毕业证书的那一天，我最想去的地方，是家。
 ---
 ## 毕设
