@@ -13,16 +13,17 @@ body {
     background-color: #eee;
 }
 .header {
-    background-color: #335599;
+    background-color: black;
     height: 50px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
-    margin: 0px;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
 }
 .header ul {
     margin: 0 auto;
-    width: 70%;
+    width: 60%;
     padding-left: 0;
 }
 .header ul li {
@@ -34,9 +35,14 @@ body {
     text-decoration: none;
     color: white;
 }
+.header ul li a:hover{
+    color:red;
+}
 .banner {
-    height: 200px;
-    background-color: #335599;
+    height: 60px;
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
 }
 .content {
     width: 60%;
@@ -58,27 +64,28 @@ body {
     color: black;
 }
 .footer {
-    background-color: #335599;
+    background-color: black;
     height: 120px;
     width: 100%;
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
 }
 .footer p {
     color: #eee;
     font-size: 20px;
     padding-top: 20px;
-    width: 70%;
-    margin: 0 auto;
+    width: 60%;
+    margin: 20px auto;
 }
 .footer ul {
     color: #eee;
     padding-left: 0;
-    width: 70%;
+    width: 60%;
     margin: 20px auto;
 }
 .footer ul li {
     display: inline-block;
     list-style: none;
+    margin: auto;
 }
 .footer ul li a {
     text-decoration: none;
@@ -105,6 +112,7 @@ body {
 }
 .changelog {
     float: right;
+    color:black !important;
 }
 img.emoji {
     margin: 0 !important;
