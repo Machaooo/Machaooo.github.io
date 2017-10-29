@@ -10,14 +10,15 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #12908d;
+    background-color: #eee;
 }
 .header {
-    background-color: #12908d;
+    background-color: #335599;
     height: 50px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
+    margin: 0px;
 }
 .header ul {
     margin: 0 auto;
@@ -31,16 +32,17 @@ body {
 }
 .header ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .banner {
     height: 200px;
     background-color: #335599;
 }
 .content {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     background-color: #eee;
+    text-align: left;
     font-family: "lato","Microsoft YaHei UI",sans-serif;
 }
 .content ul {
@@ -49,14 +51,14 @@ body {
 }
 .content ul li {
     list-style: none;
-    border-top: 1px dashed #AB466A;
+    border-top: 1px solid #fff;
 }
 .content ul li a {
     text-decoration: none;
     color: black;
 }
 .footer {
-    background-color: black;
+    background-color: #335599;
     height: 120px;
     width: 100%;
     margin-top: 50px;
@@ -84,8 +86,9 @@ body {
     font-size: 15px;
 }
 .markdown {
-    font-size: 20px;
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 2em;
+    letter-spacing: 0.1em;
     color: #424242;
 }
 .markdown p {
