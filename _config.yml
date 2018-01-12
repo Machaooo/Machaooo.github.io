@@ -1,4 +1,4 @@
-# RSS订阅
+﻿# RSS订阅
 name: "Blog of Mackail"
 description: "Web Front-End Blog by mackail"
 url: "http://www.mackail.me"
@@ -19,7 +19,7 @@ highlighter: rouge
 #链接显示
 permalink: pretty
 
-gems:
+plugins:
 - jekyll-paginate
 
 # Comment setting
