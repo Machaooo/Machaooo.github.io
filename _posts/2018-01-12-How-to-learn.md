@@ -1,7 +1,7 @@
 ---
-layout： post
-title： 对学习过程的简单理解
-date：2017-00-00 
+layout: post
+title: 对学习过程的简单理解
+date: 2018-01-12 
 excerpt: DIKW，即Data（数据）、Information（信息）、Knowledge（知识）、Wisdom（智慧）四个英文单词首字母的缩写，是一个知识管理领域内的概念。它描述了这样一个过程，即通过观察获取数据，对数据的理解得到信息，对信息的发散与运用得到知识，对知识的应用程度的把握得到智慧。
 ---
 
